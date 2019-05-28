@@ -1,37 +1,48 @@
 body {
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
-h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat' !important;
   font-weight: 700;
-  font-size: 1.5rem;
-}
-h2 {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 3rem !important;
-  line-height: 1.5;
 }
 p {
   color: #8f8f8f;
 }
+/* ! Containers */
 .container-fluid {
-  padding: 3% 15% !important;
+  padding: 7% 15% !important;
 }
-/*! Title  */
-.title-img {
-  width: 60%;
-  transform: rotate(25deg);
-}
-#title {
-  background: #ff4c68;
-  color: #fff;
-}
+/* !Headings */
 .first-heading {
   font-family: 'Montserrat';
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
+}
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/*! Title  */
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+#title {
+  text-align: left;
+  background: #ff4c68;
+  color: #fff;
+}
+#title .container-fluid {
+  padding:3%  15% 7% !important;
 }
 
 /*! Navbar */
@@ -58,11 +69,16 @@ p {
 
 /*! Features */
 .feature {
-  text-align: center;
   padding: 5%;
 }
+.feature-title {
+  font-size: 1.5;
+}
 #features {
+  position: relative;
+  z-index: 1;
   padding: 7% 15%;
+  background: #fff;
 }
 
 /* !icons */
@@ -76,10 +92,12 @@ p {
 /* ! Testimonials */
 
 #testimonials {
-  padding: 7% 15%;
-  text-align: center;
   background: #ef8172;
   color: #fff;
+}
+.testimonials-headings {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 /* ! Testimonials-img */
 .Testimonials-img {
@@ -90,7 +108,6 @@ p {
 /* ! Press */
 #press {
   background: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 /* !press logo */
@@ -100,13 +117,40 @@ p {
 }
 /* ! Slides */
 .carousel-item {
-  padding: 7% 15%;
 }
 /* ! Pricing */
 #pricing {
   padding: 100px;
-  text-align: center;
 }
-.price-col{
+.price-col {
   padding: 3% 2%;
+}
+.price-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* ! action */
+#cta {
+  background: #ff4c68;
+  color: #fff;
+}
+
+/* !Footer */
+#footer {
+  background: white;
+}
+.social-btn {
+  margin: 20px 10px;
+}
+
+/* !Media queries */
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
