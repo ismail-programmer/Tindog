@@ -42,7 +42,7 @@ p {
   color: #fff;
 }
 #title .container-fluid {
-  padding:3%  15% 7% !important;
+  padding: 3% 15% 7% !important;
 }
 
 /*! Navbar */
@@ -68,9 +68,6 @@ p {
 }
 
 /*! Features */
-.feature {
-  padding: 5%;
-}
 .feature-title {
   font-size: 1.5;
 }
@@ -80,7 +77,6 @@ p {
   padding: 7% 15%;
   background: #fff;
 }
-
 /* !icons */
 .icon {
   color: #ef8172;
@@ -114,9 +110,6 @@ p {
 .logo {
   width: 15%;
   margin: 20px 20px 50px;
-}
-/* ! Slides */
-.carousel-item {
 }
 /* ! Pricing */
 #pricing {
